@@ -3,14 +3,14 @@
 <head>
 	<!-- Hotjar Tracking Code for shalxu.github.io/ -->
 	<script>
-   		(function(h,o,t,j,a,r){
-        	h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        	h._hjSettings={hjid:834558,hjsv:6};
-        	a=o.getElementsByTagName('head')[0];
-        	r=o.createElement('script');r.async=1;
-        	r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        	a.appendChild(r);
-    	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+	(function(h,o,t,j,a,r){
+		h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+		h._hjSettings={hjid:834558,hjsv:6};
+		a=o.getElementsByTagName('head')[0];
+		r=o.createElement('script');r.async=1;
+		r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		a.appendChild(r);
+	})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
 	
 	
@@ -41,8 +41,8 @@
 
 	<title>Shal Xu - UI Programmer - Personal Portfolio</title>
 	<link rel="icon" 
-      type="image/png" 
-      href="images/favicon.jpg" />
+	type="image/png" 
+	href="images/favicon.jpg" />
 	
 
 </head>
@@ -50,25 +50,22 @@
 	<div ng-controller='MainController'>
 		<div class="alert alert-custom alert-dismissible" role="alert">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			<strong>Wedding is around the corner!</strong> Come back to check for more wedding updates
+			<strong>Site still under construction</strong> Come back to check for more wedding updates
 		</div>
 
 		<div style="display:flex;overflow:hidden;width:100%;padding-left:30px;padding-right:30px">
-			<div class="box" style="z-index:0;width:350px;height:100%;">
+			<div style="z-index:0;width:200px;height:100%;">
 				<ul class="nav nav-pills nav-stacked">
 					<li ng-class="checkActive('home')" ng-click="setActive('home')"><a href="#home">Home</a></li>
 					<li ng-class="checkActive('faq')" ng-click="setActive('faq')"><a href="#faq">FAQ</a></li>
 					<li ng-class="checkActive('rsvp')" ng-click="setActive('rsvp')"><a href="#rsvp">RSVP Here</a></li>
 					<li ng-class="checkActive('visiting')" ng-click="setActive('visiting')"><a href="#visiting">Visiting Moscow, ID</a></li>
-					<li ><a class="marked2" href="#aboutPage">About This Page</a></li>
+					<li ng-class="checkActive('aboutPage')" ng-click="setActive('aboutPage')"><a href="#aboutPage">About This Page</a></li>
 				</ul>
-				<div class="box">
-			</div>
-			<div ng-view class="box slideup page" style="left:350px;top:80px;position:absolute;width:calc(100%); width: -moz-calc(100%);
-  width: -webkit-calc(100% - 400px); min-width:650px;padding:20px;">
+				<div ng-view class="box page">
+				</div>	
 			</div>	
-		</div>	
-	</div>
-	<div style="color:gray;text-align:center"> Copyright Shal Xu @2018 </div>
-</body>
-</html>
+		</div>
+		<div style="color:lightGray;text-align:center"> Copyright Shal Xu @2018 </div>
+	</body>
+	</html>
