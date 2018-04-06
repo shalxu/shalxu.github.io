@@ -1,89 +1,93 @@
-  @media (min-width: 600px) {
-      .app {
-          display: flex;
-      }
-      .parallax {
-          height: 200px;
-      }
+@media (min-width: 600px) {
+    .app {
+        display: flex;
+    }
+    .parallax {
+        height: 200px;
+    }
 
-      .nav {
-          padding-left: 20px
-      }
-  }
+    .nav {
+        padding-left: 20px
+    }
+}
 
-  @media (max-width: 600px) {
-      .nav {
-          width: 100%
-      }
-  }
+@media (max-width: 600px) {
+    .nav {
+        width: 100%
+    }
+}
 
-
-  .centered {
-      text-align: center;
-  }
-
-  .box {
-      padding: 30px;
-      background-color: white;
-  }
-
-  a {
-      color: #ff8080;
-      /*pink*/
-      cursor: pointer;
-      position: relative;
-      left: 0;
-      transition: left 0.5s;
-  }
+.app {
+    margin-bottom: 40px;
+    font-family: Georgia, Serif;
+    font-size: 16px;
+    line-height: 25px;
+}
 
 
+.centered {
+    text-align: center;
+}
 
-  .nav>li>a:hover,
-  .nav>li>a:focus {
-      text-decoration: none;
-      background-color: #f2f2f2;
-      /*light gray*/
-      color: #ff8080;
-      left: 20px;
-  }
+.box {
+    padding: 0 30px;
+    background-color: white;
+}
 
-  .nav-pills>li.active>a,
-  .nav-pills>li.active>a:focus,
-  .nav-pills>li.active>a:hover {
-      dcolor: white;
-      background-color: #ffb3b3;
-      /*light pink*/
-  }
+a {
+    color: #ff8080;
+    /*pink*/
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    transition: left 0.5s;
+}
 
-  .label-pink {
-      background-color: #ffb3b3;
-  }
+.nav {
+    min-width: 180px;
+}
 
-  .alert-custom {
-      background-color: #f2f2f2;
-      /*light gray*/
-      color: #ff8080;
-      border-color: #e3e3e3;
-  }
+.nav>li>a:hover,
+.nav>li>a:focus {
+    text-decoration: none;
+    background-color: #f2f2f2;
+    /*light gray*/
+    color: #ff8080;
+    left: 20px;
+}
 
-  .parallax {
-      background: url('images/drawing.jpg') fixed;
-      background-size: contain;
-      background-repeat: no-repeat;
-      /*Dont mind the rest*/
-      width: 100%;
-      height: 300px;
-  }
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    dcolor: white;
+    background-color: #ffb3b3;
+    /*light pink*/
+}
 
-  .page {
-      flex-grow: 1;
-      padding: 20px;
-  }
+.label-pink {
+    background-color: #ffb3b3;
+}
 
-  .gap-window {
-      margin: 50px
-  }
+.alert-custom {
+    background-color: #f2f2f2;
+    /*light gray*/
+    color: #ff8080;
+    border-color: #e3e3e3;
+}
 
-  .try {
-      margin: 50px
-  }
+.parallax {
+    background: url('images/drawing.jpg') fixed;
+    background-size: 90%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.page {
+    flex-grow: 1;
+}
+
+
+.title {
+    color: #BADC3D
+}

@@ -49,7 +49,7 @@
 
      //Every element with the class "scroll" will have parallax background 
      //Change the "0.3" for adjusting scroll speed.
-     $('.parallax').css('background-position', '0' + -(scrolled * 0.3) + 'px');
+     $('.parallax').css('background-position', 'center' + -(scrolled * 0.3) + 'px');
  }
  //Everytime we scroll, it will fire the function
  $(window).scroll(function(e) {
