@@ -1,24 +1,4 @@
-@media (min-width: 600px) {
-    .app {
-        display: flex;
-    }
-    .parallax {
-        height: 200px;
-    }
-
-    .nav {
-        padding-left: 20px
-    }
-}
-
-@media (max-width: 600px) {
-    .nav {
-        width: 100%
-    }
-}
-
 .app {
-    margin-bottom: 40px;
     font-family: Georgia, Serif;
     font-size: 16px;
     line-height: 25px;
@@ -34,7 +14,13 @@
     background-color: white;
 }
 
-a {
+.nav {
+    min-width: 200px;
+}
+
+li {
+    padding: 10px 15px;
+    border-radius: 5px;
     color: #ff8080;
     /*pink*/
     cursor: pointer;
@@ -43,12 +29,8 @@ a {
     transition: left 0.5s;
 }
 
-.nav {
-    min-width: 180px;
-}
-
-.nav>li>a:hover,
-.nav>li>a:focus {
+.nav>li:hover,
+.nav>li:focus {
     text-decoration: none;
     background-color: #f2f2f2;
     /*light gray*/
@@ -56,10 +38,10 @@ a {
     left: 20px;
 }
 
-.nav-pills>li.active>a,
-.nav-pills>li.active>a:focus,
-.nav-pills>li.active>a:hover {
-    dcolor: white;
+.nav-pills>li.active,
+.nav-pills>li.active:focus,
+.nav-pills>li.active:hover {
+    color: white;
     background-color: #ffb3b3;
     /*light pink*/
 }
@@ -83,11 +65,57 @@ a {
     height: 300px;
 }
 
+
 .page {
     flex-grow: 1;
 }
 
+.content {
 
-.title {
-    color: #BADC3D
+    margin-bottom: 40px;
+}
+
+
+.lime-green {
+    color: #9fb925/*lime green*/
+}
+
+.pink {
+    color: #ff8080
+}
+
+.divider {
+    max-width: 150px;
+    background-color: #9fb925;
+    height: 1px;
+    border: 0;
+}
+
+@media (min-width: 600px) {
+    .app {
+        display: flex;
+    }
+    .parallax {
+        height: 200px;
+    }
+
+    .nav {
+        padding-left: 20px
+    }
+}
+
+@media (max-width: 600px) {
+    .nav {
+        width: 100%
+    }
+    .parallax {
+        background-size: cover;
+        background-position: center;
+        width: calc(100% + 60px);
+        position: relative;
+        left: -30px;
+    }
+    .box {
+        padding: 10px 0 0 0;
+    }
 }

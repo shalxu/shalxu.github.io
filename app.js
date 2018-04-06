@@ -36,6 +36,7 @@
      }
      $scope.setActive = function(item) {
          $scope.nav = item;
+         window.location.href = `/#/${item}`;
      }
 
      document.getElementById("backgroundMusic").volume = 0.1;

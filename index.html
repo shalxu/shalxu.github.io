@@ -16,6 +16,7 @@
         a.appendChild(r);
     })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
     </script>
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- <base href="http://rawgit.com/shalxu/Projects/master/AngularWebPortfolio/"> -->
     <!--Angular-->
     <script src="lib/angular/angular.min.js"></script>
@@ -48,17 +49,19 @@
         </div>
         <div class="app">
             <ul class="nav nav-pills nav-stacked">
-                <li ng-class="checkActive('home')" ng-click="setActive('home')"><a href="#home">Home</a></li>
-                <li ng-class="checkActive('faq')" ng-click="setActive('faq')"><a href="#faq">FAQ</a></li>
-                <li ng-class="checkActive('rsvp')" ng-click="setActive('rsvp')"><a href="#rsvp">RSVP Here</a></li>
-                <li ng-class="checkActive('visiting')" ng-click="setActive('visiting')"><a href="#visiting">Visiting Moscow, ID</a></li>
-                <li ng-class="checkActive('aboutPage')" ng-click="setActive('aboutPage')"><a href="#aboutPage">About This Page</a></li>
+                <li ng-class="checkActive('home')" ng-click="setActive('home')">Home</li>
+                <li ng-class="checkActive('faq')" ng-click="setActive('faq')">FAQ</li>
+                <li ng-class="checkActive('rsvp')" ng-click="setActive('rsvp')">RSVP Here</li>
+                <li ng-class="checkActive('visiting')" ng-click="setActive('visiting')">Visiting Moscow, ID </li>
+                <li ng-class="checkActive('aboutPage')" ng-click="setActive('aboutPage')">About This Page</li>
             </ul>
-            <div ng-view class="box page">
+            <div class="page">
+                <div ng-view class="box content">
+                </div>
+                <div style="color:lightGray;text-align:center"> Copyright Shal Xu @2018 </div>
             </div>
         </div>
     </div>
-    <div style="color:lightGray;text-align:center"> Copyright Shal Xu @2018 </div>
 </body>
 
 </html>
