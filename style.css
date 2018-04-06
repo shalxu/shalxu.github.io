@@ -1,4 +1,5 @@
 .app {
+    color: #555555;
     font-family: Georgia, Serif;
     font-size: 16px;
     line-height: 25px;
@@ -12,6 +13,10 @@
 .box {
     padding: 0 30px;
     background-color: white;
+}
+
+h1 {
+    text-shadow: 1px 1px lightgrey
 }
 
 .nav {
@@ -34,7 +39,7 @@ li {
     text-decoration: none;
     background-color: #f2f2f2;
     /*light gray*/
-    color: #ff8080;
+    color: #9fb925;
     left: 20px;
 }
 
@@ -59,11 +64,16 @@ li {
 
 .parallax {
     background: url('images/drawing.jpg') fixed;
-    background-size: 90%;
-    background-position: top right;
+    background-size: cover;
+    background-position: center left;
     background-repeat: no-repeat;
     height: 300px;
 }
+
+.mobile-image {
+    width: 100%
+}
+
 
 
 .page {
@@ -91,16 +101,21 @@ li {
     border: 0;
 }
 
+.fade {
+    opacity: 0.5;
+    color: #ff8080
+}
+
 @media (min-width: 600px) {
     .app {
         display: flex;
     }
-    .parallax {
-        height: 200px;
-    }
 
     .nav {
         padding-left: 20px
+    }
+    .mobile-image {
+        display: none;
     }
 }
 
@@ -109,13 +124,13 @@ li {
         width: 100%
     }
     .parallax {
-        background-size: 100%;
-        background-position: top;
-        width: calc(100% + 60px);
-        position: relative;
-        left: -30px;
+        display: none;
     }
     .box {
         padding: 10px 0 0 0;
+    }
+
+    .mobile-side-margin {
+        margin: 0 20px
     }
 }

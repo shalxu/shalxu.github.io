@@ -52,7 +52,12 @@
      //Change the "0.3" for adjusting scroll speed.
      $('.parallax').css('background-position', 'center' + -(scrolled * 0.3) + 'px');
  }
- //Everytime we scroll, it will fire the function
+
+ function fadeText() {
+     $(".fade").css("opacity", 1 - Math.abs($(window).scrollTop() - 150) / 350);
+ }
+
  $(window).scroll(function(e) {
      simpleParallax();
+     fadeText();
  });
