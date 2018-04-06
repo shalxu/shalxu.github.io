@@ -110,7 +110,7 @@ li {
     }
     .parallax {
         background-size: 100%;
-        background-position: center;
+        background-position: top;
         width: calc(100% + 60px);
         position: relative;
         left: -30px;
