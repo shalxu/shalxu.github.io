@@ -3,7 +3,9 @@
  app.config(function($routeProvider) {
      $routeProvider
          .when("/home", {
-             templateUrl: "home.html"
+             templateUrl: "home.html",
+             controller: "HomeController"
+
          })
          .when("/faq", {
              templateUrl: "faq.html"

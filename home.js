@@ -1,4 +1,5 @@
-	app.controller('HomeController', function ($animate,$scope) {
+app.controller('HomeController', function ($animate,$scope) {
+	console.log("???");
 	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
 	var opts = {
 		clockFace: 'DailyCounter',

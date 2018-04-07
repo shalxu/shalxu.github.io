@@ -23,7 +23,7 @@ h1 {
     min-width: 200px;
 }
 
-li {
+.nav>li {
     padding: 10px 15px;
     border-radius: 5px;
     color: #ff8080;
