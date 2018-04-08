@@ -1,19 +1,69 @@
-<div class="mapouter">
-    <div class="gmap_canvas">
-        <iframe width="100%" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=moscow,id&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" />
-    </div>
-    <a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+<div style='overflow:hidden;height:440px;width:700px;'>
+    <div id='gmap_canvas' style='height:440px;width:700px;'></div>
+    <div><small><a href="embedgooglemaps.com/">https://embedgooglemaps.com/en/</a></small></div>
+    <div><small><a href=""></a></small></div>
     <style>
-    .mapouter {
-        overflow: hidden;
-        height: 200px;
-        width: 300px;
-    }
-
-    .gmap_canvas {
-        background: none!important;
-        height: 500px;
-        width: 600px;
+    #gmap_canvas img {
+        max-width: none!important;
+        background: none!important
     }
     </style>
+</div>
+<script type='text/javascript'>
+function init_map() {
+    var myOptions = { zoom: 5, center: new google.maps.LatLng(46.73238749999999, -117.00016499999998), mapTypeId: google.maps.MapTypeId.ROADMAP };
+    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+    marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(46.73238749999999, -117.00016499999998) });
+    infowindow = new google.maps.InfoWindow({ content: '<strong>Moscow, ID</strong><br>Moscow, ID<br>' });
+    google.maps.event.addListener(marker, 'click', function() { infowindow.open(map, marker); });
+    infowindow.open(map, marker);
+}
+google.maps.event.addDomListener(window, 'load', init_map);
+</script>
+<div class="mobile-side-margin">
+    Since moving to Moscow last summer,we were both amazed and content with the offerings of this small town (or big city according to Hugh). If you are thinking about travelling to Moscow, what other places can you also visit during the trip? Here are some places that we have really enjoyed, and we hope you will enjoy them too!
+    <hr class="divider" />
+    <br/>Moscow Summer Highlights:
+    <br/>
+    <br/> There is this unusual landscape in the palouse called Rolling Hills!
+    <div class="parallax" style=" background: url('images/rolling-hills.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;">.</div>
+    <img src="images/rolling-hills.jpg" class="mobile-image">.</img>
+    <br/>
+    <br/>
+    <div class="lime-green">Moscow Farmer's Market (every Saturday 8am -1pm):</div>
+    You wouldn't expect a tiny town like Moscow to have such a big fancy farmer's market.There are always lots of live musicians, bakeries, caterers, art works, handcrafts, local farmers, and much more. We highly recommend the white nectarines, donut peaches and rainier cherries from local farmers!
+    <br/>
+    <br/>
+    <div class="lime-green">Moscow Art Walk:</div>
+    Artworks from local artists are displayed throughout many businesses in Moscow, ID.
+    <br/>
+    <br/>
+    <div class="lime-green">University of Idaho Arboretum and Botanical Garden:</div>
+    Sits in a scenic location right next to the Idaho rolling hills. A great variety of plants. Takes about 1.5 hours for a full-round lovely walk.
+    <div class="parallax" style=" background: url('images/botanic-garden.png') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;">.</div>
+    <img src="images/botanic-garden.png" class="mobile-image">.</img>
+    <br/>
+    <br/>
+    <div class="lime-green">University of Idaho (with a golf course)</div>
+    <br/>
+    <br/>
+    <hr class="divider" /> Nearby cities:
+    <br/>
+    <br/>
+    <div class="lime-green">Pullman:</div>
+    about 20-min drive west of Moscow. Washington State University. Also a lovely small town. bears. lots of great authentic Asian restaurants.
+    <br/>
+    <br/>
+    <div class="lime-green">Spokane:</div> 2-hour drive north of Moscow. A bigger city with real fancy shopping malls.
+    <br/>
+    <br/>
+    <div class="lime-green">Lewistion/Clarkston:</div> 40-min drive south of Moscow. Snake River. Roller skate rink in the summer. Because Lewiston sits in the valley next to snake river, you get to overlook the whole city and the river during the drive from Moscow to Lewiston. Truly breathtaking view!
+    <br/>
+    <br/>
+    <div class="lime-green">Courd Alene:</div> lakes
 </div>
