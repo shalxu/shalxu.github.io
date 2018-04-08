@@ -1,69 +1,90 @@
-<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-<div style='overflow:hidden;height:440px;width:700px;'>
-    <div id='gmap_canvas' style='height:440px;width:700px;'></div>
-    <div><small><a href="embedgooglemaps.com/">https://embedgooglemaps.com/en/</a></small></div>
-    <div><small><a href=""></a></small></div>
-    <style>
-    #gmap_canvas img {
-        max-width: none!important;
-        background: none!important
-    }
-    </style>
-</div>
-<script type='text/javascript'>
-function init_map() {
-    var myOptions = { zoom: 5, center: new google.maps.LatLng(46.73238749999999, -117.00016499999998), mapTypeId: google.maps.MapTypeId.ROADMAP };
-    map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-    marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(46.73238749999999, -117.00016499999998) });
-    infowindow = new google.maps.InfoWindow({ content: '<strong>Moscow, ID</strong><br>Moscow, ID<br>' });
-    google.maps.event.addListener(marker, 'click', function() { infowindow.open(map, marker); });
-    infowindow.open(map, marker);
-}
-google.maps.event.addDomListener(window, 'load', init_map);
-</script>
+<h1 class="lime-green">Visiting Moscow, Idaho</h1>
+<br/>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5632712.867148868!2d-121.9776897513359!3d46.42197998280264!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54a0212d22c061d1%3A0x3efd150de6eaad6c!2sMoscow%2C+ID!5e0!3m2!1sen!2sus!4v1523167089612" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+<br/>
+<br/>
 <div class="mobile-side-margin">
-    Since moving to Moscow last summer,we were both amazed and content with the offerings of this small town (or big city according to Hugh). If you are thinking about travelling to Moscow, what other places can you also visit during the trip? Here are some places that we have really enjoyed, and we hope you will enjoy them too!
-    <hr class="divider" />
-    <br/>Moscow Summer Highlights:
+    Since moving to Moscow last summer, we have been both amazed and content with the offerings of this small town (or big city, according to Hugh). If you are thinking about travelling to Moscow, what other places can you also visit on th way? Here are some spots that we have really enjoyed, and we hope you will appreciate them too!
+    <hr class="divider divider-left" />
+    <h2>Moscow Summer Highlights:</h2>
+    <br/> The summer weather in Moscow is usually very dry (expect no rain, and barely any clouds in the entire summer). You may want to bring your sunscreen and sunglasses. It can get quite hot during the day (bring those summer dresses), but chilly at night (bring a jacket).
     <br/>
-    <br/> There is this unusual landscape in the palouse called Rolling Hills!
+    <br/> There is this unusual landscape in the palouse called Rolling Hills! Definitely worth seeing.
+    <br/>
+    <br/>
     <div class="parallax" style=" background: url('images/rolling-hills.jpg') fixed;
     background-size: cover;
     background-repeat: no-repeat;">.</div>
-    <img src="images/rolling-hills.jpg" class="mobile-image">.</img>
+    <img src="images/rolling-hills.jpg" class="mobile-image" />
+    <br/>
+    <h3 class="lime-green">Moscow Farmer's Market (every Saturday 8am -1pm):</h3>
+    <br/>You wouldn't expect a tiny town like Moscow to have such a big fancy Farmer's Market.There are always lots of live musicians, bakeries, caterers, art works, handcrafts, local farmers, and much more. We highly recommend the white nectarines, donut peaches and rainier cherries from local farmers! They are the sweetest fruits we have ever tasted.
     <br/>
     <br/>
-    <div class="lime-green">Moscow Farmer's Market (every Saturday 8am -1pm):</div>
-    You wouldn't expect a tiny town like Moscow to have such a big fancy farmer's market.There are always lots of live musicians, bakeries, caterers, art works, handcrafts, local farmers, and much more. We highly recommend the white nectarines, donut peaches and rainier cherries from local farmers!
+    <a href="https://www.google.com/maps/uv?hl=en&pb=!1s0x54a027911b4c607b:0x75c103e5b1f12121!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttp://www.arbnet.org/morton-register/university-idaho-arboretum-and-botanical-garden!5sbotanic+garden+moscow+-+Google+Search&imagekey=!1e1!2shttp://www.arbnet.org/sites/arbnet/files/styles/individual_arboretum_main/public/UofIdahoArboretum_WEB_0.jpg?itok%3D02LMF50R&sa=X&ved=0ahUKEwih6rKlvKvaAhUH04MKHdOSAZoQoioIngEwDg" target="_blank">
+        <h3 class="lime-green"> Arboretum and Botanical Garden:</h3>
+    </a>
+    <br/> University of Idaho's Arboretum and Botanic Graden sits in a scenic location right next to the palouse rolling hills. A great variety of plants on display in a delicately designed landscape. It takes about 1.5 hours for a full-round lovely walk.
     <br/>
     <br/>
-    <div class="lime-green">Moscow Art Walk:</div>
-    Artworks from local artists are displayed throughout many businesses in Moscow, ID.
-    <br/>
-    <br/>
-    <div class="lime-green">University of Idaho Arboretum and Botanical Garden:</div>
-    Sits in a scenic location right next to the Idaho rolling hills. A great variety of plants. Takes about 1.5 hours for a full-round lovely walk.
     <div class="parallax" style=" background: url('images/botanic-garden.png') fixed;
     background-size: cover;
     background-repeat: no-repeat;">.</div>
-    <img src="images/botanic-garden.png" class="mobile-image">.</img>
+    <img src="images/botanic-garden.png" class="mobile-image" />
+    <br/>
+    <h3 class="lime-green">Moscow Art Walk:</h3>
+    <br/> Artworks from local artists are displayed throughout many businesses in Moscow, ID. You will see them as you roam on Main Street.
     <br/>
     <br/>
-    <div class="lime-green">University of Idaho (with a golf course)</div>
+    <h3 class="lime-green">University of Idaho:</h3>
+    <br/> In moscow locates one of University of Idaho's campuses. It even has its own cows and crops (for the agricultural programs), as well as its own golf course (where you can play a golf game or two).
     <br/>
     <br/>
-    <hr class="divider" /> Nearby cities:
+    <hr class="divider divider-left" />
+    <h2>Nearby cities:</h2>
+    <br/>
+    <a href="https://www.tripadvisor.com/Attractions-g58759-Activities-Spokane_Washington.html" target="_blank">
+        <h3 class="lime-green">Spokane:</h3>
+    </a>
+    <br/> Highly recommend! Spokane is about 2-hour drive north of Moscow. It is a big city with real fancy shopping malls (and Chinese food buffets). Moreover, Spokane River turns into a huge waterfall (Spokane Falls) in the dowontown area, and you can ride on a gondola to overlook the entire falls and river. The Monroe Street Bridge and Waterfront Park next to Spokane Falls are also beautiful. Can't miss all this!
     <br/>
     <br/>
-    <div class="lime-green">Pullman:</div>
-    about 20-min drive west of Moscow. Washington State University. Also a lovely small town. bears. lots of great authentic Asian restaurants.
+    <div class="parallax" style=" background: url('images/spokane.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;">.</div>
+    <img src="images/spokane.jpg" class="mobile-image" />
+    <br/>
+    <a href="https://www.tripadvisor.com/Attractions-g35516-Activities-Lewiston_Idaho.html" target="_blank">
+        <h3 class="lime-green">Lewistion/Clarkston:</h3>
+    </a>
+    <br/> This twin of cities spans acorss Washington and Idaho. 40-min drive south of Moscow. Snake River. Roller skate rink in the summer. Because Lewiston sits in the valley next to snake river, you get to overlook the whole city and the river during the drive from Moscow to Lewiston. The view is truly extraordinary and breathtaking!
     <br/>
     <br/>
-    <div class="lime-green">Spokane:</div> 2-hour drive north of Moscow. A bigger city with real fancy shopping malls.
+    <div class="parallax" style=" background: url('images/lewiston.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;">.</div>
+    <img src="images/lewiston.jpg" class="mobile-image" />
+    <br/>
+    <a href="https://www.tripadvisor.com/Attractions-g35418-Activities-Coeur_d_Alene_Idaho.html" target="_blank">
+        <h3 class="lime-green">Coeur d'Alene:</h3>
+    </a>
+    <br/>Lake Coeur d'Alene and Coeur d'Alene National Forest are the perfect resort to take your summer vacation (yes, it will get hot enough for swimming).
     <br/>
     <br/>
-    <div class="lime-green">Lewistion/Clarkston:</div> 40-min drive south of Moscow. Snake River. Roller skate rink in the summer. Because Lewiston sits in the valley next to snake river, you get to overlook the whole city and the river during the drive from Moscow to Lewiston. Truly breathtaking view!
+    <div class="parallax" style=" background: url('images/couer-d-alene.jpg') fixed;
+    background-size: cover;
+    background-repeat: no-repeat;">.</div>
+    <img src="images/couer-d-alene.jpg" class="mobile-image" />
+    <br/>
+    <a href="https://www.tripadvisor.com/Attractions-g58692-Activities-Pullman_Washington.html" target="_blank">
+        <h3 class="lime-green">Pullman:</h3>
+    </a>
+    <br/> Pullman is about 20-min drive west of Moscow, hosting one of the campuses of Washington State University. Just like Moscow, it is a lovely small college town. It has a open and free <a class="pink" href="https://bearcenter.wsu.edu/visit" target="_blank" />Bear Center</a>, where you can see grizzly bears roam free. There are also lots of great authentic Asian restaurants (me personally recommending <a class="pink" href="https://www.facebook.com/Plumpullman/" target="_blank">Plum</a>).
     <br/>
     <br/>
-    <div class="lime-green">Courd Alene:</div> lakes
+    <a href="https://www.tripadvisor.com/Attractions-g60878-Activities-Seattle_Washington.html" target="_blank">
+        <h3 class="lime-green">Seattle: </h3>
+    </a>
+    <br/> This is Seattle! What else needs to be said?
+    <br/> Seattle is about 6-hour drive west of Moscow. Come here to have fresh seafood, see the buzzy city life, and try indoor skydiving. Don't forget to visit Amazon's new indoor rainforest called <a class="pink" href="https://www.seattlespheres.com/" target="_blank">Sphere</a>.
 </div>
