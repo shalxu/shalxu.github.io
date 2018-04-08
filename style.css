@@ -62,9 +62,13 @@ h3 {
     /*light pink*/
 }
 
+.label {
+    font-size: 16px;
+}
+
 .label-pink {
-    background-color: #ffc8a2;
-    /*light pink*/
+    background-color: #ffb2b2;
+    /*cold pink*/
 }
 
 .alert-custom {
