@@ -26,9 +26,24 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <!--countdown timer-->
     <script src="lib/countdown/flipclock.js"></script>
-    <style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: white; background-color: #9fb925; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #9fb925; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #9fb925; }</style>
-    <link type="text/css" rel="stylesheet" href="lib/countdown/flipclock.css" />
+    <style text="text/css">
+    body .flip-clock-wrapper ul li a div div.inn,
+    body .flip-clock-small-wrapper ul li a div div.inn {
+        color: white;
+        background-color: #9fb925;
+    }
 
+    body .flip-clock-dot,
+    body .flip-clock-small-wrapper .flip-clock-dot {
+        background: #9fb925;
+    }
+
+    body .flip-clock-wrapper .flip-clock-meridium a,
+    body .flip-clock-small-wrapper .flip-clock-meridium a {
+        color: #9fb925;
+    }
+    </style>
+    <link type="text/css" rel="stylesheet" href="lib/countdown/flipclock.css" />
     <!--Bootstrap-->
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
     <script src="lib/bootstrap/bootstrap.min.js"></script>
@@ -39,20 +54,16 @@
     <script src="lib/angular/angular-route.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <script src="app.js"></script>
-     <script src="home.js"></script>
+    <script src="home.js"></script>
     <title>Shal Xu - UI Programmer - Personal Portfolio</title>
     <link rel="icon" type="image/png" href="images/favicon.jpg" />
 </head>
 
 <body ng-app='app'>
-    <audio controls autoplay loop id="backgroundMusic">
+    <audio controls autoplay loop id="backgroundMusic" style="width:100%">
         <source src="audio/iChooseYou.mp3" type="audio/mpeg"> Your browser does not support the audio element.
     </audio>
     <div ng-controller='MainController'>
-        <div class="alert alert-custom alert-dismissible" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <strong>Site still under construction.</strong> Come back to check for more wedding updates!
-        </div>
         <div class="app">
             <ul class="nav nav-pills nav-stacked">
                 <li ng-class="checkActive('home')" ng-click="setActive('home')">Home</li>
@@ -61,7 +72,6 @@
                 <li ng-class="checkActive('visiting')" ng-click="setActive('visiting')">Visiting Moscow, ID </li>
                 <li ng-class="checkActive('aboutPage')" ng-click="setActive('aboutPage')">About This Page</li>
             </ul>
-            
             <div class="page">
                 <div ng-view class="box content">
                 </div>

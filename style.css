@@ -6,15 +6,23 @@
     line-height: 25px;
 }
 
+.page {
+    flex-grow: 1;
+}
 
-.centered {
-    text-align: center;
+.content {
+    margin-bottom: 40px;
 }
 
 .box {
     padding: 0 30px;
     background-color: white;
 }
+
+.centered {
+    text-align: center;
+}
+
 
 h1 {
     text-shadow: 1px 1px forestgreen;
@@ -91,17 +99,6 @@ h3 {
     left: -30px;
     margin-bottom: 20px
 }
-
-
-
-.page {
-    flex-grow: 1;
-}
-
-.content {
-    margin-bottom: 40px;
-}
-
 
 a:hover,
 a:active,
