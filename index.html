@@ -66,11 +66,11 @@
     <div ng-controller='MainController'>
         <div class="app">
             <ul class="nav nav-pills nav-stacked">
-                <li ng-class="checkActive('home')" ng-click="setActive('home')">Home</li>
-                <li ng-class="checkActive('faq')" ng-click="setActive('faq')">FAQ</li>
-                <li ng-class="checkActive('rsvp')" ng-click="setActive('rsvp')">RSVP Here</li>
-                <li ng-class="checkActive('visiting')" ng-click="setActive('visiting')">Visiting Moscow, ID </li>
-                <li ng-class="checkActive('aboutPage')" ng-click="setActive('aboutPage')">About This Page</li>
+                <li ng-class="checkActive('home')" ng-click="setActive('home')"> <span class="glyphicon glyphicon-home"></span>Home</li>
+                <li ng-class="checkActive('faq')" ng-click="setActive('faq')"><span class="glyphicon glyphicon-question-sign"></span>FAQ</li>
+                <li ng-class="checkActive('rsvp')" ng-click="setActive('rsvp')"><span class="glyphicon glyphicon-pencil"></span>RSVP Here</li>
+                <li ng-class="checkActive('visiting')" ng-click="setActive('visiting')"><span class="glyphicon glyphicon-plane"></span>Visiting Moscow, ID </li>
+                <li ng-class="checkActive('aboutPage')" ng-click="setActive('aboutPage')"><span class="glyphicon glyphicon-leaf"></span>About This Page</li>
             </ul>
             <div class="page">
                 <div ng-view class="box content">
