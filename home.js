@@ -15,7 +15,7 @@ app.controller('HomeController', function($animate, $scope) {
         play: 'play',
         wrapper: 'flip-clock-small-wrapper'
     };
-    var countdown = 1532210400 - ((new Date().getTime()) / 1000); // from: 07/21/2018 03:00 pm -0700
+    var countdown = 1532221200 - ((new Date().getTime()) / 1000); // from: 07/21/2018 06:00 pm -0700
     countdown = Math.max(1, countdown);
     $('.countdown').FlipClock(countdown, opts);
 });

@@ -28,6 +28,7 @@ h1 {
     text-shadow: 1px 1px forestgreen;
 }
 
+
 h2 {
     font-size: 25px
 }
@@ -154,7 +155,7 @@ a>.pink:focus {
 }
 
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
     .app {
         display: flex;
     }
@@ -171,7 +172,7 @@ a>.pink:focus {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .nav {
         width: 100%
     }
