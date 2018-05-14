@@ -10,8 +10,14 @@
          .when("/faq", {
              templateUrl: "faq.html"
          })
+         .when("/schedule", {
+             templateUrl: "schedule.html"
+         })
          .when("/rsvp", {
              templateUrl: "rsvp.html"
+         })
+         .when("/gallery", {
+             templateUrl: "gallery.html"
          })
          .when("/visiting", {
              templateUrl: "visiting.html"
