@@ -17,7 +17,8 @@
              templateUrl: "rsvp.html"
          })
          .when("/gallery", {
-             templateUrl: "gallery.html"
+             templateUrl: "gallery.html",
+             controller: "GalleryController"
          })
          .when("/visiting", {
              templateUrl: "visiting.html"

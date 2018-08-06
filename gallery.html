@@ -10,44 +10,86 @@
     -ms-flex-wrap: wrap;
     /* IE10 */
     flex-wrap: wrap;
-    padding: 0 10px;
+    @media(min-width: 700px) {
+        margin: 16px;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* Create four equal columns that sits next to each other */
 
 .column {
-    -ms-flex: 50%;
+    -ms-flex: 33%;
     /* IE10 */
-    flex: 50%;
-    max-width: 50%;
-    padding: 0 10px;
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 8px;
 }
 
 .column img {
-    margin-top: 20px;
+    margin-top: 16px;
     vertical-align: middle;
+    width: 100%;
+    cursor: zoom-in;
 }
+
+.column p {
+    width: 100%;
+    text-align: center;
+}
+
+
+
 
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
+
+    .column p {
+        padding: 0 16px;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    .column img:hover {
+        transform: scale(2);
+        -webkit-transition: all 0.5s ease-in;
+        /* Safari */
+        transition: all 0.5s ease-in;
+        position: relative;
+        z-index: 10;
+    }
 }
 </style>
 <!-- Photo Grid -->
 <div class="row">
-    <div class="column">
-        <img src="/images/photo1.jpg" style="width:100%">
-        <img src="/images/photo3.png" style="width:100%">
+    <div class="column" id="column0">
     </div>
-    <div class="column">
-        <img src="/images/photo2.jpg" style="width:100%">
+    <div class="column" id="column1">
+    </div>
+    <div class="column" id="column2">
     </div>
 </div>
