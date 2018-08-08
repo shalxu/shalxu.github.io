@@ -8,7 +8,7 @@ app.controller('GalleryController', function($animate, $scope) {
         "12": "Hummingbird wedding cake from Food Co-op (pecans, banana, pineapple, spices)",
         "14": "Sprite with Japanese Cherry Blossom ",
         "15": "Chinese food from Iron Wok (Walnut Shrimp, Cashew Chicken, Signapore Noodles, Veggie Deluxe, White Rice, Spring Roll, Barbecued Pork)",
-        "16 ": "Food Bites Tour @Pike 's Place Market, Seattle",
+        "16": "Food Bites Tour @Pike 's Place Market, Seattle",
         "17": "Exotic Fruit stand, weird-looking grapes",
         "18": "On the Seattle Ferris Wheel",
         "20": "Gum Wall in Seattle (ewww~)",
